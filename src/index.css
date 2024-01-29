@@ -1,0 +1,330 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+body{
+background: url("https://github.com/manualdodev/memory-game/blob/main/images/bg.jpg?raw=true");
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.mural{
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    gap: 25px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 200px;
+    margin-top: 5px;
+@media(max-width:1000px){
+grid-template-columns: repeat(4,100px);
+}
+@media(max-width:663px) {
+grid-template-columns: repeat(5,50px);
+}
+
+@media(max-width:619px) {
+grid-template-columns: repeat(5,50px);
+
+}
+
+@media(max-width:500px) {
+grid-template-columns: repeat(4,50px);
+
+}
+@media(max-width:500px) {
+grid-template-columns: repeat(4,50px);
+
+}
+
+}
+.house{
+background: 0;
+border: none;
+width: 100px;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 100px;
+margin-bottom: 600px;
+@media(max-width:1000px){
+width: 80px;
+margin-left: 50px;
+}
+@media(max-width:1180px){
+margin-left: 100px;
+}
+
+@media(max-width:956px){
+margin-left: 10px;
+}
+@media(max-width:935px){
+margin-left: 10px;
+
+}
+@media(max-width:831px){
+width: 50px;
+margin-left: 20px;
+}
+
+@media(max-width:663px){
+width: 50px;
+margin-top: 50px;
+}
+
+@media(max-width:423px){
+width: 30px;
+margin-top: 50px;
+margin-left: 15px;
+padding: 10px;
+font-size: 10px;
+height: 10px;
+}
+@media(max-width:392px){
+width: 30px;
+margin-top: 50px;
+margin-left: 10px;
+padding: 10px;
+font-size: 10px;
+height: 10px;
+}
+
+
+@media(max-width:325px){
+width: 50px;
+margin-top: 20px;
+padding: 5px;
+margin-left: 5px;
+font-size: 10px;
+width: 30px;
+}
+@media(max-width: 299px){
+width: 50px;
+padding: 10px;
+
+}
+
+
+
+
+
+}
+
+
+.card{
+margin-bottom: -20px;
+border: 2px solid green;
+display: flex;
+aspect-ratio: 4/5;
+height: 150px;
+transform-style: preserve-3d;
+transition: 0.45s ;
+@media(max-width:1000px){
+height: 120px;
+}
+
+@media(max-width:831px){
+    height: 100px;
+}
+
+@media(max-width:671px){
+    height: 80px;
+}
+
+}
+
+header{
+background-color: white;
+height: 50px;
+display: flex;
+margin-bottom: 205px;
+width: 100vw;
+max-width: 550px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 30px;
+margin-top: 150px;
+z-index: 1;
+margin: 20px auto;
+
+@media(max-width:831px){
+max-width: 450px;
+margin-left: -15px;
+}
+
+@media(max-width:663px){
+max-width: 350px;
+margin-left: 20px;
+}
+
+@media(max-width:500px){
+max-width: 300px;
+margin-left: 20px;
+}
+
+@media(max-width:325px){
+max-width: 250px;
+margin-left: 20px;
+font-size: 10px;
+margin-top: 30px;
+}
+
+}
+.vct{
+display: flex;
+align-items: center;
+justify-content: center;
+}    
+.img{
+ margin-left: 5px;
+z-index: 3;
+backface-visibility: hidden;
+transform: rotateY(180deg);
+background-position: center;
+width: 100%;
+height: 100%;
+}    
+.face{
+background: url("https://github.com/manualdodev/memory-game/blob/main/images/back.png?raw=true");    
+background-position: center;
+background-size: cover;
+}
+.blackwhite{
+filter: saturate(0);    
+opacity: 1.8;
+}
+.tudo{
+display: flex;    
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.span{
+margin-right: 50px;
+color:red
+}
+
+.btn{
+width: 120px;
+background-color: red;
+color: white;
+cursor: pointer;
+border: 3px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn img{
+margin-left: 3px;
+margin-bottom: 20px;
+}
+
+.terreo{
+width: 100vw;
+min-height: 100vh;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 100px;
+
+}
+
+.brain{
+width: 200px;
+}
+img{
+margin-left: -35px;
+}
+input{
+padding: 10px;
+width: 300px;
+font-size: 18px;
+font-weight: 700;
+border: 3px solid black;
+margin-top: 30px;
+outline: none;
+background-color: red; 
+color: white;
+border-radius: 8px;
+}
+button{
+padding: 15px ;
+width: 300px;
+margin-top: 15px;
+border: 0;
+background:#f08080;
+cursor: pointer;
+box-shadow: 1px 4px 10px rgba(0,0,0,08);
+font-size: 16px;
+font-weight: 700;
+border-radius: 5px;
+}
+.tempop{
+position: absolute;
+}
+.flipcard  {
+transform: rotateY(180deg);
+transition: all 0.5s;
+z-index: 2;
+background-color: #f08080;
+}
+img{
+width: 100px;
+}  
+.wins{
+height:100vh ;
+width: 100vw;
+background-color: black;
+}
+.imgwin{
+width: 500px;
+margin: 20px auto;
+margin-bottom: -100px;
+}
+.menssagem{
+color: white;
+position: absolute;
+margin: 200px -120px;
+height: 100px;
+display: flex;
+align-items: center;
+padding: 10px;
+border-radius: 5px;
+background-color: black;
+border: 3px solid rebeccapurple;
+@media(max-width:494px){
+margin-left: -115px;
+}
+
+@media(max-width:287px){
+margin-left: -115px;
+width: 200px;
+font-size: 12px;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
