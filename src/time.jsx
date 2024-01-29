@@ -89,7 +89,7 @@ setmenssagem("Parabéns você conseguiu com " + minutos + " minutos e " + segund
 }
 }
 else{
-if(segundos==5){
+if(minutos==4){
 clearInterval(loop)
 setTimeout(()=>{
 setmenssagem("Game over seu tempo acabou!")
